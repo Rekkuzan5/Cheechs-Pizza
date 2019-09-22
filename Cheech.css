@@ -128,10 +128,16 @@ input[type="text"] {
 
 select {
     display: inline-block;
-    text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
-    width: 50%;
+    width: 30%;
+    text-align: center;
     font-size: 30px;
 }
 
+
+
+#quantity {
+    display: inline;
+    margin-right: 25%;
+}
