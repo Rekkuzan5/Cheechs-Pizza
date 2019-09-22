@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="Cheech.css" />
     <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
-    <script src="main.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -43,20 +43,21 @@
             <form>
                 Name: <input type="text" name="fname"><br>
                 Phone Number: <input type="text" name="phone"><br>
-                <input type="submit" value="Submit">
+                <!--<input type="submit" value="Submit">-->
+            <div id="selectName">
+                <select name="pizzas" onclick="listPizza()">
+                    <option value="a">#</option>
+                    <option value="b">#</option>
+                    <option value="c">#</option>
+                    <option value="d">#</option>
+                    <option value="e">#</option>
+                    <option value="f">#</option>
+                </select>
+            </div>
             </form>
         </div>
-        <div class="selectBox">
-            <select name="pizzas">
-                <option value="cheese">Cheese</option>
-                <option value="cheese">Hawaiian</option>
-                <option value="cheese">BBQ Chicken</option>
-                <option value="cheese">Cheech's Pizza</option>
-                <option value="cheese">Vegan</option>
-                <option value="cheese">Veggie</option>
-            </select>
-        </div>
     </div>
+           
         <div class="pictureWrapper">
             <button input="button" id="order">Order Now</button>
             <div class="pizzas">
@@ -92,8 +93,5 @@
                 </div>
             </div>
         </div>
-
-
-
 </body>
 </html>
