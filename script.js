@@ -8,11 +8,9 @@ var pizzas =    [   "Cheese",
 
 
 function listPizza() {
-     var select = document.getElementById("pizzas");
     for (var i = 0; i < pizzas.length; i++)
     {
-       var el = document.getElementById("value");
-        el.innerHTML = pizzas[i];
-        el.option = pizzas[i];
+        document.write("<option value='" + i + "'>" + pizzas[i] + "</option>");
+        console.log("<option onclick='listPizza(this)' value='" + i + "'>" + pizzas[i] + "</option>");
     }
 }
