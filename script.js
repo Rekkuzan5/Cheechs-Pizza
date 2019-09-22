@@ -8,8 +8,11 @@ var pizzas =    [   "Cheese",
 
 
 function listPizza() {
+     var select = document.getElementById("pizzas");
     for (var i = 0; i < pizzas.length; i++)
     {
-        document.getElementById("a").innerHTML = pizzas[i];
+       var el = document.getElementById("value");
+        el.innerHTML = pizzas[i];
+        el.option = pizzas[i];
     }
 }
