@@ -62,7 +62,7 @@
             </div>
     </div>
         <div class="orderButton">
-           <button input="button" id="myButton" class="order" onclick="orderNow()">Order Now</button>
+           <button input="button" id="myButton" class="order">Order Now</button>
                 <!--Gets changed by function orderNow to display order summary-->
                 <p id="summary">Order Summary Here</p>
         </div>
@@ -104,6 +104,8 @@
                 </div>
             </div>
         </div>
-       
+       <script>
+           document.getElementById("myButton").addEventListener("click", orderNow);
+       </script>
 </body>
 </html>

@@ -22,9 +22,6 @@ function listQuantity() {
     }
 }
 
-//var x = document.getElementById("button");
-//x.addEventListener("click", orderNow());
-
 function orderNow() {
     var name = document.getElementById("name").value;
     var phone = document.getElementById("phone").value;
