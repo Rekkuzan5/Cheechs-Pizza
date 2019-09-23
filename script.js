@@ -6,7 +6,6 @@ var pizzas =    [   "Cheese",
                     "Veggie Pizza"
                 ]
 
-
 function listPizza() {
     for (var i = 0; i < pizzas.length; i++)
     {
@@ -22,6 +21,9 @@ function listQuantity() {
 
     }
 }
+
+//var x = document.getElementById("button");
+//x.addEventListener("click", orderNow());
 
 function orderNow() {
     var name = document.getElementById("name").value;
@@ -43,3 +45,4 @@ function orderNow() {
     
     document.getElementById("summary").innerHTML = string;
 }
+

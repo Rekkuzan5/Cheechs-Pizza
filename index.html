@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Cheech.css" />
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+     <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="topInfo">
+        <div class="top-left">
+            <h2 class="h2-a">Cheech's Pizza</h2>
+        </div>
+        <div class="top-right">
+            <p id="p1">Los Angeles, CA</p>
+            <h2 id="h1-a">888-8888</h2>
+        </div>
+    </div>
+
+    <div class="opening">
+        <img src="Images/slice.jpg" class="openingImg">
+    </div>
+    
+   
+        <div class="nav-heading">
+            <div class="nav-right">
+                <a href="#">Pizza</a>
+                <a href="#">Deals</a>
+                <a href="#">Salads</a>  
+                <a href="#">Pasta</a>
+                <a href="#">Sandwiches</a>
+                <a href="#">Appetizers</a>
+                <a href="#">Desserts</a>
+                <a href="#">Beverages</a>
+            </div>
+        </div>    
+    <div class="orderDetails">
+            <div class="ordertext">
+                <form>
+                    Name: <input type="text" name="fname" id="name"><br>
+                    Phone Number: <input type="text" name="phone" id="phone"><br>
+                    <!--<input type="submit" value="Submit">--> 
+                </form>
+
+                <select id="pizzaType">
+                    <!--This is for the pizza selection box, the listPizza array fills the boxes-->
+                    <script>
+                    listPizza()
+                    </script>
+                </select>
+            
+                <select id="pizzaQuant">
+                    <!--This is for the quantity of pizzas-->
+                    <script>
+                    listQuantity()
+                    </script>
+                </select>
+            </div>
+    </div>
+        <div class="orderButton">
+           <button input="button" id="myButton" class="order">Order Now</button>
+                <!--Gets changed by function orderNow to display order summary-->
+                <p id="summary">Order Summary Here</p>
+        </div>
+    
+
+    </div>       
+        <div class="pictureWrapper">
+           
+            <div class="pizzas">
+                <div class="items-a">
+                    <img src="Images/cheese.jpg" width="300">
+                    <h3>Cheese</h3>
+                    <p><i>A simple cheese pizza</i></p>
+                </div>
+                <div class="items-b">
+                    <img src="Images/hawaiian.jpg" width="300">
+                    <h3>Hawaiian Pizza</h3>
+                    <p><i>A classic pineapple and ham pizza</i></p>
+                </div>
+                <div class="items-c">
+                    <img src="Images/bbqchicken.jpg" width="300">
+                    <h3>BBQ Chicken</h3>
+                    <p><i>A BBQ chicken pizza</i></p>
+                </div>
+                <div class="items-d">
+                    <img src="Images/cheechspizza.jpg" width="300">
+                    <h3>Cheech's Pizza</h3>
+                    <p><i>A fan favorite!</i></p>
+                </div>
+                <div class="items-e">
+                    <img src="Images/vegan.jpg" width="300">
+                    <h3>Vegan Pizza</h3>
+                    <P><i>The best vegan pizza ever made.</i></p>
+                </div>
+                <div class="items-f">
+                    <img src="Images/veggie.jpg" width="300">
+                    <h3>Veggie Pizza</h3>
+                    <p><i>Filled with lots of veggies.</i></p>
+                </div>
+            </div>
+        </div>
+       
+</body>
+</html>

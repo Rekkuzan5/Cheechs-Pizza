@@ -61,7 +61,7 @@
     width: 100%;
     float: right;
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
-     transform: translateY(-100px);
+    transform: translateY(-100px);
 }
 
 .pictureWrapper {
@@ -91,7 +91,7 @@
 }
 
 .pizzas {
-    padding-top: 50px;
+    margin-top: 50px;
     display: inline-block; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
