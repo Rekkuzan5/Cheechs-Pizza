@@ -41,27 +41,36 @@
     <div class="orderDetails">
             <div class="ordertext">
                 <form>
-                    Name: <input type="text" name="fname"><br>
-                    Phone Number: <input type="text" name="phone"><br>
+                    Name: <input type="text" name="fname" id="name"><br>
+                    Phone Number: <input type="text" name="phone" id="phone"><br>
                     <!--<input type="submit" value="Submit">--> 
                 </form>
 
-                <select>
+                <select id="pizzaType">
                     <!--This is for the pizza selection box, the listPizza array fills the boxes-->
                     <script>
                     listPizza()
                     </script>
                 </select>
             
-                <select>
-
+                <select id="pizzaQuant">
+                    <!--This is for the quantity of pizzas-->
+                    <script>
+                    listQuantity()
+                    </script>
                 </select>
             </div>
     </div>
+        <div class="orderButton">
+           <button input="button" class="order" onclick="orderNow()">Order Now</button>
+                <!--Gets changed by function orderNow to display order summary-->
+                <p id="summary">Order Summary Here</p>
+        </div>
+    
 
     </div>       
         <div class="pictureWrapper">
-            <button input="button" id="order">Order Now</button>
+           
             <div class="pizzas">
                 <div class="items-a">
                     <img src="cheese.jpg" width="300">
