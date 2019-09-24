@@ -7,6 +7,7 @@ var pizzas =    [   "Cheese",
                 ]
 
 function listPizza() {
+    // loop thru array and write choices into selection box.
     for (var i = 0; i < pizzas.length; i++)
     {
         document.write("<option value='" + i + "'>" + pizzas[i] + "</option>");
@@ -15,14 +16,15 @@ function listPizza() {
 }
 
 function listQuantity() {
+    // loop values into selection box for quantity.
     for (var i = 1; i <= 10; i++)
     {
         document.write("<option value='" + i + "'>" + i + "</option>");
-
     }
 }
 
 function orderNow() {
+    // get values from each of the textboxes and selection boxes.  Calculate total and print string order summary.
     var name = document.getElementById("name").value;
     var phone = document.getElementById("phone").value;
     var type = document.getElementById("pizzaType");
